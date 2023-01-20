@@ -3,12 +3,19 @@ def interface():
 	keep_running = True
 	while keep_running:
 		print("Options")
+		print("1- HDL")
 		print("9- Quit")
 		choice = input("Select and option:")
 		if choice == "9":
 			keep_running =False
-			return
-		print("Program Ending")
+		elif choice == "1":
+			HDL_driver()
+		
+	print("Program Ending")
+
+def HDL_driver():
+	HDL_in = HDL_input()
+	HDL_analy = HDL_analysis(HDL_in) 
 		
 def HDL_input():
 	HDL_value = input("Enter HDL result:")
