@@ -61,6 +61,29 @@ def LDL_input():
 	
 def LDL_output(LDL_value,LDL_analy):
 	print("The LDL result of {} is considered {}".format(LDL_value,LDL_analy))
+
+
+def chol_analysis(chol_int):
+	if chol_int >= 240:
+		answer = "High"
+	elif 200 <= chol_int < 239:
+		answer = "Borderline High"
+	else:
+		answer = "Normal"
+	return answer 
 	
+def chol_driver():
+	chol_in = chol_input()
+	chol_analy = chol_analysis(chol_in) 
+	chol_output(chol_in,chol_analy)
+		
+def chol_input():
+	LDL_value = input("Enter LDL result:")
+	LDL_value = int(LDL_value)
+	return LDL_value
+	
+def LDL_output(LDL_value,LDL_analy):
+	print("The LDL result of {} is considered {}".format(LDL_value,LDL_analy))
+
 
 interface()
