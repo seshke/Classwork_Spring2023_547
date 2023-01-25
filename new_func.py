@@ -78,12 +78,12 @@ def chol_driver():
 	chol_output(chol_in,chol_analy)
 		
 def chol_input():
-	LDL_value = input("Enter LDL result:")
-	LDL_value = int(LDL_value)
-	return LDL_value
+	chol_value = input("Enter Cholesterol result:")
+	chol_value = int(chol_value)
+	return chol_value
 	
-def LDL_output(LDL_value,LDL_analy):
-	print("The LDL result of {} is considered {}".format(LDL_value,LDL_analy))
+def LDL_output(chol_value,chol_analy):
+	print("The Cholesterol result of {} is considered {}".format(chol_value,chol_analy))
 
 
 interface()
