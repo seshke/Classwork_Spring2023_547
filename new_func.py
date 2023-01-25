@@ -1,6 +1,3 @@
-print("This is new_func.py") 
-print("Python thinks this is called {}".format(__name__))
-
 def interface():
 	print("Blood Calculator")
 	keep_running = True
@@ -91,5 +88,5 @@ def chol_input():
 def chol_output(chol_value,chol_analy):
 	print("The Cholesterol result of {} is considered {}".format(chol_value,chol_analy))
 
-if __name__ == "__main__":
-	interface()
+
+interface()
