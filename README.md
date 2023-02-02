@@ -10,7 +10,10 @@ This is written in Python.
 ## Specifications 
 The database will contain 
 * Patient Name
+* Patient Medical Record Number
 * Patient Age
+* Patient Test Results
+
 * Patient Bloodtype 
     - A+
     - A- 
@@ -22,7 +25,4 @@ The database will contain
 2. Patient Gender
 3. Medical Record Number 
 
-'''
-def function(x):
-    print(x)
-'''
+
