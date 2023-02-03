@@ -88,5 +88,5 @@ def chol_input():
 def chol_output(chol_value,chol_analy):
 	print("The Cholesterol result of {} is considered {}".format(chol_value,chol_analy))
 
-
-interface()
+if __name__ == "__main__":
+	interface()
