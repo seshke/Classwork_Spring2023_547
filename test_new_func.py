@@ -19,3 +19,17 @@ def test_LDL_analysis(LDL_input, expected):
 	answer = LDL_analysis(LDL_input)
 	# Assert
 	assert answer == expected 
+	
+def test_check_fever():
+	from new_func import check_fever
+	input_temps = [97, 98.6, 100.1, 103, 98.4]
+	answer = check_fever(input_temps)
+	expected = True
+	assert answer == expected 
+	
+
+def check_fever(input_list):
+	for temp in input_list:
+		if temp > 100.5:
+			return True
+	return False 
